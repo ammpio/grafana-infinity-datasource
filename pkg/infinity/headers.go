@@ -23,6 +23,7 @@ const (
 	headerKeyContentType   = "Content-Type"
 	headerKeyAuthorization = "Authorization"
 	headerKeyIdToken       = "X-ID-Token"
+	headerKeyGrafanaUser   = "X-Grafana-User"
 )
 
 func ApplyAcceptHeader(query models.Query, settings models.InfinitySettings, req *http.Request, includeSect bool) *http.Request {
@@ -145,5 +146,10 @@ func ApplyForwardedOAuthIdentity(requestHeaders map[string]string, settings mode
 			req.Header.Add(headerKeyIdToken, token)
 		}
 	}
+	return req
+}
+
+func SetGrafanaUserHeader(query querySrv.Query, req *http.Request) *http.Request {
+	req.Header.Set(headerKeyGrafanaUser, query.GrafanaUser)
 	return req
 }
