@@ -24,6 +24,7 @@ const (
 
 type Query struct {
 	RefID               string                 `json:"refId"`
+	GrafanaUser         string                 `json:"grafana_user"`
 	Type                QueryType              `json:"type"`   // 'json' | 'json-backend' | 'csv' | 'tsv' | 'xml' | 'graphql' | 'html' | 'uql' | 'groq' | 'series' | 'global' | 'google-sheets'
 	Format              string                 `json:"format"` // 'table' | 'timeseries' | 'dataframe' | 'as-is' | 'node-graph-nodes' | 'node-graph-edges'
 	Source              string                 `json:"source"` // 'url' | 'inline' | 'reference' | 'random-walk' | 'expression'
@@ -169,6 +170,11 @@ func ApplyDefaultsToQuery(query Query) Query {
 	return query
 }
 
+func SetGrafanaUser(query Query, pluginContext backend.PluginContext) Query {
+	query.GrafanaUser = pluginContext.User.Login
+	return query
+}
+
 func LoadQuery(backendQuery backend.DataQuery, pluginContext backend.PluginContext) (Query, error) {
 	var query Query
 	err := json.Unmarshal(backendQuery.JSON, &query)
@@ -176,5 +182,6 @@ func LoadQuery(backendQuery backend.DataQuery, pluginContext backend.PluginConte
 		return query, fmt.Errorf("error while parsing the query json. %s", err.Error())
 	}
 	query = ApplyDefaultsToQuery(query)
+	query = SetGrafanaUser(query, pluginContext)
 	return ApplyMacros(query, backendQuery.TimeRange, pluginContext)
 }
