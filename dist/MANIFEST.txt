@@ -1,0 +1,51 @@
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+{
+  "manifestVersion": "2.0.0",
+  "signatureType": "private",
+  "signedByOrg": "ammp",
+  "signedByOrgName": "ammp",
+  "rootUrls": [
+    "https://app.ammp.io/",
+    "https://app.stage.ammp.io/",
+    "https://nextgen.ammp.io/"
+  ],
+  "plugin": "ammp-infinity-datasource",
+  "version": "1.2.0",
+  "time": 1673373642543,
+  "keyId": "7e4d0c6a708866e7",
+  "files": {
+    "index.html": "2fa2c4168c5bb7b8502989f437e4a1a71e663702b0ec9c01530215c8c026dcaf",
+    "LICENSE": "1cef18ec1381f74e164687131eb88d9e28baffee490972797ff281059330f9d6",
+    "gpx_infinity_linux_arm64": "9e4f0546b851537bbe74211e009510398fdbeb784b5c6c9df3347dbf8c04d03d",
+    "CHANGELOG.md": "f5479d76f826ec42d7f7f00d4d8f6137e84abe377911897663d27e0a797a2b68",
+    "gpx_infinity_darwin_arm64": "2f9d09b81bd25d55ff05d7441b6660a29101c88fd58ae707ef12420f0c6d9a8e",
+    "module.js.LICENSE.txt": "81ac6ec1a5d68758c36e5520d5bb8441e8b1f2958997a4a366445964e566b719",
+    "module.js.map": "a6d59d27cebae73a53354a32bcaf05909075a754ce27e4ec79784195ce6b1545",
+    "plugin.json": "2010ba00c830669fe1170002a955c42d8b05750dab7ebe8148fd34f9c73bb8a0",
+    "README.md": "c69233fd4fc433853f1b605b50816fe2a733767d526428501bb6007b587f0505",
+    "gpx_infinity_linux_amd64": "e5cb7810c5019498953028502c80c2d83fcc9a3a64cec8b2bc1654ded7a99572",
+    "img/icon.svg": "e498b00e1cc3c9e8b65a2b8320b7d170c6da61d424fe5f3f3fdf9963204449ae",
+    "img/slide-variables.png": "8ed0cd7b1ac00bd2c7fa6e72c513b678c39ba7d63030f06e8695cb1d352e3b34",
+    "img/slide-series.png": "f7d523c39f9d4567974c37432f047e4e8944cb92dc2c9a4424757ce5e54dc3a7",
+    "img/slide-features.png": "58aba3b2f2d73ee99945cba9746463f0039d8afb5366ed8d42db62145b914d0f",
+    "img/slide-rest-api.png": "cf72349768e0ccf19a856d86e97c8e67dcdadfcee49e73ae5acbe781c3ae0c79",
+    "gpx_infinity_darwin_amd64": "02e7fc4f4bf0c1612d719f24f09d2b0e0ad95aa56663c738e9d3a15cd0d75d43",
+    "module.js": "5637ddf15121149f68250fb546f57833e970dfe2891e725943671495c2ecf6e1",
+    "gpx_infinity_windows_amd64.exe": "701c3489e1acb0dc4582deb00092b29392154b50d3b617c0960d2539693769dd",
+    "gpx_infinity_linux_arm": "5dd82deb42c1640cd338fd496a78a8b454b09430e7612a13bca61af6f9666e6d"
+  }
+}
+-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v4.10.10
+Comment: https://openpgpjs.org
+
+wrcEARMKAAYFAmO9p8oAIQkQfk0ManCIZucWIQTzOyW2kQdOhGNlcPN+TQxq
+cIhm5/9qAgYuBP8JTRjhBPJCBGGmDS6eWUEkomqtgd5Q3UfIMN94fKWGXFtU
+3Wh2lVMFavHZu9WuUWWrffrXWY3/o2KSA0iwygIHViip2tXC8TzrjudxKiVY
+AcroCYxC93BcYQEqi3iU9ahpFIP7KbpOyCTCoE+6I/7A70bs4+xVrHbrvdZM
+RPXTwRk=
+=afqe
+-----END PGP SIGNATURE-----
