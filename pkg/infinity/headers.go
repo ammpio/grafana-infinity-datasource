@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/yesoreyeram/grafana-infinity-datasource/pkg/models"
 	querySrv "github.com/yesoreyeram/grafana-infinity-datasource/pkg/query"
-	settingsSrv "github.com/yesoreyeram/grafana-infinity-datasource/pkg/settings"
 )
 
 const dummyHeader = "xxxxxxxx"
@@ -27,7 +27,7 @@ const (
 	headerKeyGrafanaUser   = "X-Grafana-User"
 )
 
-func ApplyAcceptHeader(query querySrv.Query, settings settingsSrv.InfinitySettings, req *http.Request, includeSect bool) *http.Request {
+func ApplyAcceptHeader(query querySrv.Query, settings models.InfinitySettings, req *http.Request, includeSect bool) *http.Request {
 	if query.Type == querySrv.QueryTypeJSON || query.Type == querySrv.QueryTypeGraphQL {
 		req.Header.Set(headerKeyAccept, `application/json;q=0.9,text/plain`)
 	}
@@ -40,7 +40,7 @@ func ApplyAcceptHeader(query querySrv.Query, settings settingsSrv.InfinitySettin
 	return req
 }
 
-func ApplyContentTypeHeader(query querySrv.Query, settings settingsSrv.InfinitySettings, req *http.Request, includeSect bool) *http.Request {
+func ApplyContentTypeHeader(query querySrv.Query, settings models.InfinitySettings, req *http.Request, includeSect bool) *http.Request {
 	if strings.ToUpper(query.URLOptions.Method) == http.MethodPost {
 		switch query.URLOptions.BodyType {
 		case "raw":
@@ -67,7 +67,7 @@ func ApplyContentTypeHeader(query querySrv.Query, settings settingsSrv.InfinityS
 	return req
 }
 
-func ApplyHeadersFromSettings(settings settingsSrv.InfinitySettings, req *http.Request, includeSect bool) *http.Request {
+func ApplyHeadersFromSettings(settings models.InfinitySettings, req *http.Request, includeSect bool) *http.Request {
 	for key, value := range settings.CustomHeaders {
 		val := dummyHeader
 		if includeSect {
@@ -83,7 +83,7 @@ func ApplyHeadersFromSettings(settings settingsSrv.InfinitySettings, req *http.R
 	return req
 }
 
-func ApplyHeadersFromQuery(query querySrv.Query, settings settingsSrv.InfinitySettings, req *http.Request, includeSect bool) *http.Request {
+func ApplyHeadersFromQuery(query querySrv.Query, settings models.InfinitySettings, req *http.Request, includeSect bool) *http.Request {
 	for _, header := range query.URLOptions.Headers {
 		value := dummyHeader
 		if includeSect {
@@ -99,7 +99,7 @@ func ApplyHeadersFromQuery(query querySrv.Query, settings settingsSrv.InfinitySe
 	return req
 }
 
-func ApplyBasicAuth(settings settingsSrv.InfinitySettings, req *http.Request, includeSect bool) *http.Request {
+func ApplyBasicAuth(settings models.InfinitySettings, req *http.Request, includeSect bool) *http.Request {
 	if settings.BasicAuthEnabled && (settings.UserName != "" || settings.Password != "") {
 		basicAuthHeader := fmt.Sprintf("Basic %s", dummyHeader)
 		if includeSect {
@@ -110,8 +110,8 @@ func ApplyBasicAuth(settings settingsSrv.InfinitySettings, req *http.Request, in
 	return req
 }
 
-func ApplyBearerToken(settings settingsSrv.InfinitySettings, req *http.Request, includeSect bool) *http.Request {
-	if settings.AuthenticationMethod == settingsSrv.AuthenticationMethodBearerToken {
+func ApplyBearerToken(settings models.InfinitySettings, req *http.Request, includeSect bool) *http.Request {
+	if settings.AuthenticationMethod == models.AuthenticationMethodBearerToken {
 		bearerAuthHeader := fmt.Sprintf("Bearer %s", dummyHeader)
 		if includeSect {
 			bearerAuthHeader = fmt.Sprintf("Bearer %s", settings.BearerToken)
@@ -121,8 +121,8 @@ func ApplyBearerToken(settings settingsSrv.InfinitySettings, req *http.Request, 
 	return req
 }
 
-func ApplyApiKeyAuth(settings settingsSrv.InfinitySettings, req *http.Request, includeSect bool) *http.Request {
-	if settings.AuthenticationMethod == settingsSrv.AuthenticationMethodApiKey && settings.ApiKeyType == settingsSrv.ApiKeyTypeHeader {
+func ApplyApiKeyAuth(settings models.InfinitySettings, req *http.Request, includeSect bool) *http.Request {
+	if settings.AuthenticationMethod == models.AuthenticationMethodApiKey && settings.ApiKeyType == models.ApiKeyTypeHeader {
 		apiKeyHeader := dummyHeader
 		if includeSect {
 			apiKeyHeader = settings.ApiKeyValue
@@ -134,7 +134,7 @@ func ApplyApiKeyAuth(settings settingsSrv.InfinitySettings, req *http.Request, i
 	return req
 }
 
-func ApplyForwardedOAuthIdentity(requestHeaders map[string]string, settings settingsSrv.InfinitySettings, req *http.Request, includeSect bool) *http.Request {
+func ApplyForwardedOAuthIdentity(requestHeaders map[string]string, settings models.InfinitySettings, req *http.Request, includeSect bool) *http.Request {
 	if settings.ForwardOauthIdentity {
 		authHeader := dummyHeader
 		token := dummyHeader
