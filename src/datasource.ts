@@ -152,7 +152,7 @@ export class Datasource extends DataSourceWithBackend<InfinityQuery, InfinityOpt
         } else {
           promises.push(
             this.resolveData(target, options.range, options.scopedVars, data).then((r) => {
-              if (target.type === 'json' && target.format === 'as-is') {
+              if (target.type === 'json' && (target.format === 'as-is' || target.format === 'dataframe')) {
                 return r;
               } else if (
                 (target.type === 'csv' || target.type === 'json' || target.type === 'xml' || target.type === 'graphql' || target.type === 'uql' || target.type === 'groq') &&
