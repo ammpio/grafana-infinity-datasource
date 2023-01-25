@@ -10,7 +10,7 @@
   "alerting": true,
   "info": {
     "version": "1.4.0",
-    "updated": "2023-01-24",
+    "updated": "2023-01-25",
     "description": "JSON API, CSV, XML, GraphQL, HTML, Google Sheets and REST API datasource for Grafana. Do infinite things with Grafana. Transform data with UQL/GROQ. Visualize data from many apis including AWS, Azure, Google Cloud / GCP and RSS/ATOM feeds directly",
     "author": {
       "name": "Sriramajeyam Sugumaran",
