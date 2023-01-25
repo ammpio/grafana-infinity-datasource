@@ -81,19 +81,8 @@ export const sendAsDataFrame = (res: unknown, format: InfinityQueryFormat = 'tab
         }
       }
     } else {
-      resolve(
-        new MutableDataFrame({
-          name: refId || 'result',
-          length: 1,
-          fields: [
-            {
-              name: 'result',
-              type: FieldType.string,
-              values: [JSON.stringify(res, null, 4)],
-            },
-          ],
-        })
-      );
+      // If payload is an object, try to convert to dataframe directly
+      resolve(toDataFrame(res));
     }
   });
 };
