@@ -16,7 +16,7 @@ Hash: SHA512
   ],
   "plugin": "ammp-infinity-datasource",
   "version": "1.4.0",
-  "time": 1700668649393,
+  "time": 1700675942827,
   "keyId": "7e4d0c6a708866e7",
   "files": {
     "index.html": "2fa2c4168c5bb7b8502989f437e4a1a71e663702b0ec9c01530215c8c026dcaf",
@@ -37,18 +37,17 @@ Hash: SHA512
     "gpx_infinity_darwin_amd64": "8fb389eb518e899417ae4b534ebbbbe845d70fc967a32f4f9aa0ccb53d43453b",
     "module.js": "e325f3d5a47bad0e56cccedf887ed6bce15346b448f0a46450f3553878d338db",
     "gpx_infinity_windows_amd64.exe": "5bcd908671fc24f8ea4bf7e94cf5477ff7d7bab6d163d887a5b117df9195a418",
-    "gpx_infinity_linux_arm": "ac92d3bc24e92e1ad00da18f47ab1d8d4dec070213cf3feb8b853703b5d452a4",
-    "MANIFEST.txt.bak": "09000d4d45836aaf60f51b714e841d56acd7c0caab45f4414549a1caee367cc4"
+    "gpx_infinity_linux_arm": "ac92d3bc24e92e1ad00da18f47ab1d8d4dec070213cf3feb8b853703b5d452a4"
   }
 }
 -----BEGIN PGP SIGNATURE-----
 Version: OpenPGP.js v4.10.10
 Comment: https://openpgpjs.org
 
-wrkEARMKAAYFAmVeJOkAIQkQfk0ManCIZucWIQTzOyW2kQdOhGNlcPN+TQxq
-cIhm5ycOAgkBACGYCtz6lc005fuh79uZIsRyw2ptHBLPp/YuF80eSl4+aknj
-sfdtQ8G71aS8mP2wBaAh+12zbg5aUIbC0JIMANECCQGwWiG8uTQeF0+uXPTO
-SsXseGHytCqS2RQK/cPpV5K8lMz9JnyaRqQQ9EvCd19Y2JIgEZJaJKGzim2h
-SHSYND0Qmw==
-=uj1V
+wrgEARMKAAYFAmVeQWcAIQkQfk0ManCIZucWIQTzOyW2kQdOhGNlcPN+TQxq
+cIhm51RLAgkBfqI04/uoYEpo5vsA7WmAGpRywUFna502bY1ISBCemjsQOc84
+9Y1kuOL7utqj7dTspt9fOxEY8fnXc207mtSl6JwCB2Igrr6NvB8ao3egyh+c
+2QhHtjKZB6U1OejpAEPZyyfOfW1/nfrNFjMDcdvkGeZr/Gtqv9bAURu2Beos
+u7s+sv+h
+=+RiL
 -----END PGP SIGNATURE-----
