@@ -12,11 +12,16 @@ Hash: SHA512
     "https://app.stage.ammp.io/",
     "https://nextgen.ammp.io/",
     "https://elum.stage.ammp.io/",
-    "https://elum.ammp.io/"
+    "https://elum.ammp.io/",
+    "http://localhost:3000/",
+    "https://cloud.phocos.com/",
+    "https://phocos.stage.ammp.io/",
+    "https://epm.elum-energy.com/",
+    "https://staging-epm.elum-energy.com/"
   ],
   "plugin": "ammp-infinity-datasource",
   "version": "1.4.0",
-  "time": 1700675942827,
+  "time": 1707304834699,
   "keyId": "7e4d0c6a708866e7",
   "files": {
     "index.html": "2fa2c4168c5bb7b8502989f437e4a1a71e663702b0ec9c01530215c8c026dcaf",
@@ -44,10 +49,10 @@ Hash: SHA512
 Version: OpenPGP.js v4.10.10
 Comment: https://openpgpjs.org
 
-wrgEARMKAAYFAmVeQWcAIQkQfk0ManCIZucWIQTzOyW2kQdOhGNlcPN+TQxq
-cIhm51RLAgkBfqI04/uoYEpo5vsA7WmAGpRywUFna502bY1ISBCemjsQOc84
-9Y1kuOL7utqj7dTspt9fOxEY8fnXc207mtSl6JwCB2Igrr6NvB8ao3egyh+c
-2QhHtjKZB6U1OejpAEPZyyfOfW1/nfrNFjMDcdvkGeZr/Gtqv9bAURu2Beos
-u7s+sv+h
-=+RiL
+wrkEARMKAAYFAmXDZ4IAIQkQfk0ManCIZucWIQTzOyW2kQdOhGNlcPN+TQxq
+cIhm5+pPAgkBhUVvr+1mGxEgUVEEUb2XE2yUeIytYEZAtSavT3olDBE2GnIB
+8i2h2b4FrT608XHz0UNaeLWNDVxRrHNhET4XvKgCCQGoS3AVqLDf8FtGB9S7
+hitx5MOj+xSdB08HZEON0xJheyegS0TU4xxxIaK4OIOdU7JYm1lPxpZd5TAC
+SdBKYq+7lw==
+=jZeM
 -----END PGP SIGNATURE-----
