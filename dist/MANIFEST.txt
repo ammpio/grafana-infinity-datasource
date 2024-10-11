@@ -8,6 +8,8 @@ Hash: SHA512
   "signedByOrg": "ammp",
   "signedByOrgName": "ammp",
   "rootUrls": [
+    "https://os.ammp.io/dashboard",
+    "https://os.stage.ammp.io/dashboard",
     "https://app.ammp.io/",
     "https://app.stage.ammp.io/",
     "https://nextgen.ammp.io/",
@@ -21,7 +23,7 @@ Hash: SHA512
   ],
   "plugin": "ammp-infinity-datasource",
   "version": "1.4.0",
-  "time": 1707304834699,
+  "time": 1728659211691,
   "keyId": "7e4d0c6a708866e7",
   "files": {
     "index.html": "2fa2c4168c5bb7b8502989f437e4a1a71e663702b0ec9c01530215c8c026dcaf",
@@ -46,13 +48,13 @@ Hash: SHA512
   }
 }
 -----BEGIN PGP SIGNATURE-----
-Version: OpenPGP.js v4.10.10
+Version: OpenPGP.js v4.10.11
 Comment: https://openpgpjs.org
 
-wrkEARMKAAYFAmXDZ4IAIQkQfk0ManCIZucWIQTzOyW2kQdOhGNlcPN+TQxq
-cIhm5+pPAgkBhUVvr+1mGxEgUVEEUb2XE2yUeIytYEZAtSavT3olDBE2GnIB
-8i2h2b4FrT608XHz0UNaeLWNDVxRrHNhET4XvKgCCQGoS3AVqLDf8FtGB9S7
-hitx5MOj+xSdB08HZEON0xJheyegS0TU4xxxIaK4OIOdU7JYm1lPxpZd5TAC
-SdBKYq+7lw==
-=jZeM
+wrkEARMKAAYFAmcJPwsAIQkQfk0ManCIZucWIQTzOyW2kQdOhGNlcPN+TQxq
+cIhm59NcAgkBR6oNN9ZIcmzYSHDuAOvzdtUHGW+Rq1YsrBdXcpq2BmG8I2wm
+jYSLYuhPrd47llVp08rrbeIdwZfTmtLrQT0BH2cCCQCmwyUn8k1qf/yoJW26
+hrMgdeE4me8RMFnSYXwlQRngaHIuBzKuD+GyeYfabTsWveX8/5CZkaE5NsBe
+lVHvAtKFOg==
+=C5mt
 -----END PGP SIGNATURE-----
