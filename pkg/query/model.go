@@ -171,7 +171,9 @@ func ApplyDefaultsToQuery(query Query) Query {
 }
 
 func SetGrafanaUser(query Query, pluginContext backend.PluginContext) Query {
-	query.GrafanaUser = pluginContext.User.Login
+	if pluginContext.User != nil {
+		query.GrafanaUser = pluginContext.User.Login
+	}
 	return query
 }
 
