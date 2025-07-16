@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"mime/multipart"
 	"net/http"
+	"strconv"
 	"strings"
 
 	"github.com/yesoreyeram/grafana-infinity-datasource/pkg/models"
@@ -25,6 +26,7 @@ const (
 	headerKeyAuthorization = "Authorization"
 	headerKeyIdToken       = "X-ID-Token"
 	headerKeyGrafanaUser   = "X-Grafana-User"
+	headerKeyGrafanaOrg    = "X-Grafana-Org"
 )
 
 func ApplyAcceptHeader(query querySrv.Query, settings models.InfinitySettings, req *http.Request, includeSect bool) *http.Request {
@@ -151,6 +153,13 @@ func ApplyForwardedOAuthIdentity(requestHeaders map[string]string, settings mode
 }
 
 func SetGrafanaUserHeader(query querySrv.Query, req *http.Request) *http.Request {
-	req.Header.Set(headerKeyGrafanaUser, query.GrafanaUser)
+	if query.GrafanaUser != "" {
+		req.Header.Set(headerKeyGrafanaUser, query.GrafanaUser)
+	}
+	return req
+}
+
+func SetGrafanaOrgHeader(query querySrv.Query, req *http.Request) *http.Request {
+	req.Header.Set(headerKeyGrafanaOrg, strconv.FormatInt(query.GrafanaOrg, 10))
 	return req
 }

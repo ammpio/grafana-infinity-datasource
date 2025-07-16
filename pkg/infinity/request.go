@@ -32,6 +32,7 @@ func GetRequest(settings models.InfinitySettings, body io.Reader, query querySrv
 	req = ApplyApiKeyAuth(settings, req, includeSect)
 	req = ApplyForwardedOAuthIdentity(requestHeaders, settings, req, includeSect)
 	req = SetGrafanaUserHeader(query, req)
+	req = SetGrafanaOrgHeader(query, req)
 	return req, err
 }
 

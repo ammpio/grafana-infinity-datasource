@@ -35,6 +35,7 @@ const (
 type Query struct {
 	RefID               string                 `json:"refId"`
 	GrafanaUser         string                 `json:"grafana_user"`
+	GrafanaOrg          int64                  `json:"grafana_org"`
 	Type                QueryType              `json:"type"`   // 'json' | 'json-backend' | 'csv' | 'tsv' | 'xml' | 'graphql' | 'html' | 'uql' | 'groq' | 'series' | 'global' | 'google-sheets'
 	Format              string                 `json:"format"` // 'table' | 'timeseries' | 'dataframe' | 'as-is' | 'node-graph-nodes' | 'node-graph-edges'
 	Source              string                 `json:"source"` // 'url' | 'inline' | 'reference' | 'random-walk' | 'expression'
@@ -181,7 +182,16 @@ func ApplyDefaultsToQuery(query Query) Query {
 }
 
 func SetGrafanaUser(query Query, pluginContext backend.PluginContext) Query {
-	query.GrafanaUser = pluginContext.User.Login
+	if pluginContext.User != nil {
+		query.GrafanaUser = pluginContext.User.Login
+	}
+	return query
+}
+
+func SetGrafanaOrg(query Query, pluginContext backend.PluginContext) Query {
+	if pluginContext.OrgID != 0 {
+		query.GrafanaOrg = pluginContext.OrgID
+	}
 	return query
 }
 
