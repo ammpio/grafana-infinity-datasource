@@ -23,38 +23,38 @@ Hash: SHA512
   ],
   "plugin": "ammp-infinity-datasource",
   "version": "1.4.0",
-  "time": 1752672420859,
+  "time": 1752680141882,
   "keyId": "7e4d0c6a708866e7",
   "files": {
     "index.html": "2fa2c4168c5bb7b8502989f437e4a1a71e663702b0ec9c01530215c8c026dcaf",
     "LICENSE": "1cef18ec1381f74e164687131eb88d9e28baffee490972797ff281059330f9d6",
-    "gpx_infinity_linux_arm64": "258b7f9d8279f6ce80c62dfcfde90f167716709324e571d105f734d2bb579d45",
+    "gpx_infinity_linux_arm64": "7ea007a5a227f284f580469c5581b53464a3ee6cfa02a935850d43f3eb896f0d",
     "CHANGELOG.md": "1272bd9f90db374c78fd074451d0ed188d0fc2453d92f81e53cf034019a64db0",
-    "gpx_infinity_darwin_arm64": "673ebe09bf82fb6fbf4aa1367425a332a4190aa716c35a27eaf854a174d63d8c",
+    "gpx_infinity_darwin_arm64": "4ad4e8b4cef42839d03999be18a95d8917f07b6987174b8335e79d864c357141",
     "module.js.LICENSE.txt": "81ac6ec1a5d68758c36e5520d5bb8441e8b1f2958997a4a366445964e566b719",
     "module.js.map": "044882b56af4fa10007fe71e9329f13a5bbdca47b2fe4b0bd615ff4e5e82f42a",
     "plugin.json": "a71ce686a14dc5b4bdebcdf6a4d3e1f812aa486b33c6b79f421096ecc26b2a9e",
     "README.md": "01256e89eb5a45ac9e408b1df31cde16c81991c133cc2a235a1a56db808c83d1",
-    "gpx_infinity_linux_amd64": "975f4684024fc29a86563a2a29251a6159cf61b41ff4a8449e8a03e13c0cb6a0",
+    "gpx_infinity_linux_amd64": "c8db1ee09651f770a2496a0ddd94a18425cb0e5d4bdc3c192bcf0b5948df6565",
     "img/icon.svg": "e498b00e1cc3c9e8b65a2b8320b7d170c6da61d424fe5f3f3fdf9963204449ae",
     "img/slide-variables.png": "8ed0cd7b1ac00bd2c7fa6e72c513b678c39ba7d63030f06e8695cb1d352e3b34",
     "img/slide-series.png": "f7d523c39f9d4567974c37432f047e4e8944cb92dc2c9a4424757ce5e54dc3a7",
     "img/slide-features.png": "58aba3b2f2d73ee99945cba9746463f0039d8afb5366ed8d42db62145b914d0f",
     "img/slide-rest-api.png": "cf72349768e0ccf19a856d86e97c8e67dcdadfcee49e73ae5acbe781c3ae0c79",
-    "gpx_infinity_darwin_amd64": "676822a58c4de7efd2d54fd27f43abaee76fe6cdf714e26931ca47f88a2273f4",
+    "gpx_infinity_darwin_amd64": "e64e7481fa81cae7571f0bce483899e0dac0a6f481b4b770eb5fd261d447a0c7",
     "module.js": "e325f3d5a47bad0e56cccedf887ed6bce15346b448f0a46450f3553878d338db",
-    "gpx_infinity_windows_amd64.exe": "e9607cffea988c98bafc2425551e266f35fc90500dc624bd87574b72d1be1997",
-    "gpx_infinity_linux_arm": "d3fb4ed1cf4b3533d81571fda5d759ab1c3e0945519ac7a3a071ce5aa0670cb9"
+    "gpx_infinity_windows_amd64.exe": "c65a8ccbc4657ba6560a817565ef11ba914e50eeefcfddfd3d2a2d216e147409",
+    "gpx_infinity_linux_arm": "cde31ea91c3ba72ac4f819b9ee356face485d0d3c227f4d43e8959664725fd74"
   }
 }
 -----BEGIN PGP SIGNATURE-----
 Version: OpenPGP.js v4.10.11
 Comment: https://openpgpjs.org
 
-wrkEARMKAAYFAmh3qKUAIQkQfk0ManCIZucWIQTzOyW2kQdOhGNlcPN+TQxq
-cIhm55knAgkBxMp45ZLa8+I2RDgqxfLAPLrLmhxO0Tqs5X1vjpnsawlqZ30r
-NPMq3UOeuMR7yvZ6Pf9QS78vlm9TnABTL2EcgLkCCQFQDyIVe7HA6KfDZfhC
-BcQqcfydP9PntTlT8WPzMaK85PjhNIW7NpW2cu4NFBk/7tBpN3godl/+cc5i
-kwhSnbl5sQ==
-=p1a2
+wrkEARMKAAYFAmh3xs4AIQkQfk0ManCIZucWIQTzOyW2kQdOhGNlcPN+TQxq
+cIhm55N7AgkBtlgXKiRZDCgBLlr7kBHVYoTTG6Cf7vpQR5eyGDD9XWoiipG1
+9//+qJojCqBY5oZEOfBu0qQq/zksOVYDx31VwhsCCQG7BZO5idMXleGUOCXs
+UJD3rSOBMencML0toT3ujgfzGBKrm47eyhnIH7REzRO7eFdEC4I+sfH+QndD
+CHFCLVbVpg==
+=MWOq
 -----END PGP SIGNATURE-----

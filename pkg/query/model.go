@@ -203,5 +203,6 @@ func LoadQuery(backendQuery backend.DataQuery, pluginContext backend.PluginConte
 	}
 	query = ApplyDefaultsToQuery(query)
 	query = SetGrafanaUser(query, pluginContext)
+	query = SetGrafanaOrg(query, pluginContext)
 	return ApplyMacros(query, backendQuery.TimeRange, pluginContext)
 }
