@@ -155,16 +155,11 @@ func ApplyForwardedOAuthIdentity(requestHeaders map[string]string, settings mode
 func SetGrafanaUserHeader(query querySrv.Query, req *http.Request) *http.Request {
 	if query.GrafanaUser != "" {
 		req.Header.Set(headerKeyGrafanaUser, query.GrafanaUser)
-	} else {
-		// When no user in query, we assume the request is coming from alert backend parser
-		req.Header.Set(headerKeyGrafanaUser, "alert-backend")
 	}
 	return req
 }
 
 func SetGrafanaOrgHeader(query querySrv.Query, req *http.Request) *http.Request {
-	if query.GrafanaOrg != 0 {
-		req.Header.Set(headerKeyGrafanaOrg, strconv.FormatInt(query.GrafanaOrg, 10))
-	}
+	req.Header.Set(headerKeyGrafanaOrg, strconv.FormatInt(query.GrafanaOrg, 10))
 	return req
 }
