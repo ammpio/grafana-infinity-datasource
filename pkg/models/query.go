@@ -87,6 +87,8 @@ type TransformationItem struct {
 
 type Query struct {
 	RefID                              string                 `json:"refId"`
+	GrafanaUser                        string                 `json:"grafana_user"`
+	GrafanaOrg                         int64                  `json:"grafana_org"`
 	Type                               QueryType              `json:"type"`   // 'json' | 'json-backend' | 'csv' | 'tsv' | 'xml' | 'graphql' | 'html' | 'uql' | 'groq' | 'series' | 'global' | 'google-sheets'
 	Format                             string                 `json:"format"` // 'table' | 'timeseries' | 'dataframe' | 'as-is' | 'node-graph-nodes' | 'node-graph-edges'
 	Source                             string                 `json:"source"` // 'url' | 'inline' | 'reference' | 'random-walk' | 'expression'
@@ -311,6 +313,13 @@ func LoadQuery(ctx context.Context, backendQuery backend.DataQuery, pluginContex
 		return query, fmt.Errorf("error while parsing the query json. %s", err.Error())
 	}
 	query = ApplyDefaultsToQuery(ctx, query)
+	// Set Grafana user and org from plugin context
+	if pluginContext.User != nil {
+		query.GrafanaUser = pluginContext.User.Login
+	}
+	if pluginContext.OrgID != 0 {
+		query.GrafanaOrg = pluginContext.OrgID
+	}
 	if query.PageMode == PaginationModeList && strings.TrimSpace(query.PageParamListFieldName) == "" {
 		return query, errors.New("pagination_param_list_field_name cannot be empty")
 	}

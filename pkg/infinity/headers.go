@@ -151,14 +151,14 @@ func ApplyForwardedOAuthIdentity(requestHeaders map[string]string, settings mode
 	return req
 }
 
-func SetGrafanaUserHeader(query querySrv.Query, req *http.Request) *http.Request {
+func SetGrafanaUserHeader(query models.Query, req *http.Request) *http.Request {
 	if query.GrafanaUser != "" {
 		req.Header.Set(headerKeyGrafanaUser, query.GrafanaUser)
 	}
 	return req
 }
 
-func SetGrafanaOrgHeader(query querySrv.Query, req *http.Request) *http.Request {
+func SetGrafanaOrgHeader(query models.Query, req *http.Request) *http.Request {
 	req.Header.Set(headerKeyGrafanaOrg, strconv.FormatInt(query.GrafanaOrg, 10))
 	return req
 }
