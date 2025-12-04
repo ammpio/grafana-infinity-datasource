@@ -17,7 +17,7 @@
     "test": "TZ=UTC yarn lint && TZ=UTC grafana-toolkit plugin:test",
     "e2e": "yarn exec cypress run",
     "e2e:open": "yarn exec cypress open",
-    "build": "grafana-toolkit plugin:build",
+    "build": "TZ=UTC grafana-toolkit plugin:build",
     "ci-build": "yarn lint && grafana-toolkit plugin:ci-build",
     "audit-ci": "audit-ci",
     "sign": "grafana-toolkit plugin:sign"
