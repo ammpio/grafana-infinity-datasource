@@ -38,11 +38,11 @@ export const PaginationEditor = (props: PaginationEditorProps) => {
             <Select<PaginationType> width={30} value={query.pagination_mode || 'none'} options={paginationTypes} onChange={(e) => onChange({ ...query, pagination_mode: e.value || 'none' })} />
           </EditorField>
           {query.pagination_mode && query.pagination_mode !== 'none' && (
-            <EditorField label="Max pages" tooltip={'maximum of 5 pages. minimum of 1 page. Default 1'}>
+            <EditorField label="Max pages" tooltip={'maximum of 50 pages. minimum of 1 page. Default 1'}>
               <Input
                 type={'number'}
                 min={1}
-                max={5}
+                max={50}
                 width={30}
                 value={query.pagination_max_pages}
                 onChange={(e) => onChange({ ...query, pagination_max_pages: e.currentTarget.valueAsNumber || 1 })}
