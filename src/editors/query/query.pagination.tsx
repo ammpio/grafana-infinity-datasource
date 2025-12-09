@@ -46,7 +46,7 @@ export const PaginationEditor = (props: PaginationEditorProps) => {
                 width={30}
                 value={query.pagination_max_pages}
                 onChange={(e) => onChange({ ...query, pagination_max_pages: e.currentTarget.valueAsNumber || 1 })}
-                placeholder="min:1, max:5"
+                placeholder="min:1, max:50"
               />
             </EditorField>
           )}

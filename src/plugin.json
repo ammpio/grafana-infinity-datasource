@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
-  "name": "Infinity",
-  "id": "ammp-infinity-datasource",
+  "name": "AMMP Infinity V2",
+  "id": "ammp-infinity-datasource-v2",
   "type": "datasource",
   "executable": "gpx_infinity",
   "backend": true,
