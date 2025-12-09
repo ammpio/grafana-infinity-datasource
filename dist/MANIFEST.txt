@@ -22,19 +22,19 @@ Hash: SHA512
   ],
   "plugin": "ammp-infinity-datasource-v2",
   "version": "2.0.0",
-  "time": 1765293438160,
+  "time": 1765293681428,
   "keyId": "7e4d0c6a708866e7",
   "files": {
     "go_plugin_build_manifest": "d2a52fc610916353a625cba965fd7726e55f044a3824d79b02307a279d53bcc9",
     "LICENSE": "cf7c88bac56d05ba8bae0401ffd8f72334bf2b685a8e4cbae76c3b1d11c6c24e",
-    "gpx_infinity_linux_arm64": "9f74c132b381608b782e724c91705c55003e31300d72162ff52213869fbd2a12",
+    "gpx_infinity_linux_arm64": "8f4975d0db5ab1448fc1de12333ef4864d0f35a700a6f9ab025fb223d318d5ba",
     "CHANGELOG.md": "4cc97404518edf7bf35b9176da090fa556595c606dc4f1e7b21a7cc46bf4d377",
-    "gpx_infinity_darwin_arm64": "8b794b82559998ae09efc7cb9240041e103002bedf80835b4f553291b48f6854",
+    "gpx_infinity_darwin_arm64": "a8b2cea04b9150b62eed30093c8a333aa2d1e8d59f815d501bb9fb7dcd000868",
     "module.js.LICENSE.txt": "c18b3334ddca8d22ac5a07738a31d4cbb76180b91b9c77c38346ebc377d69098",
-    "module.js.map": "2e873374591c136e2b38b2d942762f1a73927b115b8d7def201859441435f6c3",
+    "module.js.map": "8c8c307218cdadab33e8124d3aea9a8b4c17f1867ec2a60206a25ef6b53400e2",
     "plugin.json": "884b513e7002918c68cea3eabb518e799dccf18cd674b4db2b082cb50eb4b4fe",
     "README.md": "01256e89eb5a45ac9e408b1df31cde16c81991c133cc2a235a1a56db808c83d1",
-    "gpx_infinity_linux_amd64": "39ad5bfeab8fc7e155f1886cd75f0b5ba65ac23045f5e75432a3d0104a64fe39",
+    "gpx_infinity_linux_amd64": "2a17f97ba581a5e31eacb743c1e6a91a3669692757baba9be730b72a1dd0211b",
     "img/homepage-bg.svg": "97ec32b2c542bcb63b7fa7659e42a876a5b9ec00aef7a486f2dc41b83d7d9eb8",
     "img/aws.jpg": "e682ccc794708fd3eb32a3fb5e2bcccd8ff3b54f30eba2086fd1b28a82020d81",
     "img/icon.svg": "e498b00e1cc3c9e8b65a2b8320b7d170c6da61d424fe5f3f3fdf9963204449ae",
@@ -43,19 +43,19 @@ Hash: SHA512
     "img/slide-features.png": "58aba3b2f2d73ee99945cba9746463f0039d8afb5366ed8d42db62145b914d0f",
     "img/oauth-2-sm.png": "9945bb307d5545369d50381acc97d48b4a98433831f14e99eb839f0970a91258",
     "img/slide-rest-api.png": "cf72349768e0ccf19a856d86e97c8e67dcdadfcee49e73ae5acbe781c3ae0c79",
-    "gpx_infinity_darwin_amd64": "7c20e6fe1e55094b3d23557e06c72d2f6a30945b151a741d77fc305171b2b4a3",
-    "module.js": "7a3ebb02dae0a6dc4abf02611a8f1deb1bff24ccab6457dc1e0cd4b56531497a",
-    "gpx_infinity_windows_amd64.exe": "00840bd5f9467444536d2705d8175640689d9be05b0c3c8f8763ca34e75f9c6f",
-    "gpx_infinity_linux_arm": "d7b17f09b6e7c89504cce456823308e196b8f2374bf095b13924d1dffd56eab0"
+    "gpx_infinity_darwin_amd64": "388c298eae42f3f10a1e1f080c73fde330736f3e82043d263f5fe3b2a256757b",
+    "module.js": "03ea4e4d561424c124d1dd6751f81e223a7719e521c0ae441951291688502774",
+    "gpx_infinity_windows_amd64.exe": "a727a466967c79b02d9dd801e7b6dee2d92e79c962736a022f75a11621710149",
+    "gpx_infinity_linux_arm": "bada6d65bd9b033e55a09cedb43aa98ba9744434b2d1d583025d892940667fe3"
   }
 }
 -----BEGIN PGP SIGNATURE-----
 
-wsA/BAETCgBtBYJpOD1+CRB+TQxqcIhm50UUAAAAAAAcACBzYWx0QG5vdGF0
-aW9ucy5vcGVucGdwanMub3JnFXiYR4go4i+J/qQzL657kOVAbTmoyIwiE8/t
-IKUtDR0WIQTzOyW2kQdOhGNlcPN+TQxqcIhm5wAAmAUCCQEqTLYYa7vxa8tt
-5T9roBNY2xTKkflTCbBaNShW2vFo1eOP4GS2Xav5XZTle6uGSeFSg17upqrC
-lmSw+oxudOhUVwIJAZQSkaNa3rjbDcSUOPVD8O26njKgWQWTZJSTCPt8vEc/
-7Oge4xgUuGpXVIYOqSRwLrgn2qEDAz7ik8Wk4baTYYz9
-=64o1
+wsA9BAETCgBtBYJpOD5xCRB+TQxqcIhm50UUAAAAAAAcACBzYWx0QG5vdGF0
+aW9ucy5vcGVucGdwanMub3JnX7QeRd17FrPVwqpSyp7MCCL9++N17numqAhP
+sIg8ZJgWIQTzOyW2kQdOhGNlcPN+TQxqcIhm5wAAGhQCCIFCAvoxPE0ZYg/y
+Jogdm0AoAeyH0f6QQ0aRbGmrIEu1GjcuZoXEkVbXDAMfbTuGz6v7LTwt9Lw7
+WMhZQS5nOdGPAgi1oqWTKtIzpfIzSqULUaJGfoJhfpYaYWZS4Dj/IVGNENhj
+eQVFhI7LG28UFz6Cf4iVbI1CJykuQxp2A0rAVTEJPw==
+=Bvml
 -----END PGP SIGNATURE-----
