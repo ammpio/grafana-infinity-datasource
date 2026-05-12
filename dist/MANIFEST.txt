@@ -20,11 +20,13 @@ Hash: SHA512
     "https://epm.elum-energy.com/",
     "https://staging-epm.elum-energy.com/",
     "https://elum-os.stage.ammp.io/dashboard/",
-    "https://elum-os.ammp.io/dashboard/"
+    "https://elum-os.ammp.io/dashboard/",
+    "https://staging-epm.elum-energy.com/dashboard/",
+    "https://epm.elum-energy.com/dashboard/"
   ],
   "plugin": "ammp-infinity-datasource",
   "version": "1.4.0",
-  "time": 1776784756284,
+  "time": 1778594508481,
   "keyId": "7e4d0c6a708866e7",
   "files": {
     "index.html": "2fa2c4168c5bb7b8502989f437e4a1a71e663702b0ec9c01530215c8c026dcaf",
@@ -50,11 +52,11 @@ Hash: SHA512
 }
 -----BEGIN PGP SIGNATURE-----
 
-wsA+BAETCgBtBYJp55V0CRB+TQxqcIhm50UUAAAAAAAcACBzYWx0QG5vdGF0
-aW9ucy5vcGVucGdwanMub3JnJ1BkQeVM0VFore/q5NdyaVh7IUqsvoQ5NBSs
-bNrf7gkWIQTzOyW2kQdOhGNlcPN+TQxqcIhm5wAA2vcCCNv+OxmneQWmZh2+
-vPhPK99Xf1U69qqt5C9bhtgqVgPmsWW8FSFCTJ+iq20IXmhEx7YPMt9M5uCU
-stNhnWoQYh9PAgkBIhyZP8dPbs9wVDudaMn3bubgkAgBY6qCrAfxCZDX1bcm
-JK/AZDFAdVTW4laBNdifRzhYljfLywu2S8LiZ9tcoTs=
-=XwLy
+wsA9BAETCgBtBYJqAzLMCRB+TQxqcIhm50UUAAAAAAAcACBzYWx0QG5vdGF0
+aW9ucy5vcGVucGdwanMub3JnaGm+AM5ojwIJZ0tZMziN8Gf0Lj2psPr4NRgT
+SRNo2/oWIQTzOyW2kQdOhGNlcPN+TQxqcIhm5wAAQbYCB3pL6M2ah1hisyuz
+BqTAPGRETOzB0rhvPTkexYtYmBNIDHMNkJHBbe0dOcDTs4DoPUcx3tJT+H1L
+HrlYrpCXVursAgY+qyXE0Ay7tC4SQ8Ebd4998vyl6u24P4gUDCelFeS51Vgi
+GM5mOmu1i04nN70nudNHhfUP/3fDB2JpLLqtqNV6fA==
+=fLS3
 -----END PGP SIGNATURE-----
